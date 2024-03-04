@@ -6,6 +6,9 @@
   <li>first name: {{object.author.first_name}}</li>
   <li>last name: {{object.author.last_name}}</li>
   <li>Body: {{object.body}}</li>
+  <br>
+  <a href="{% url 'article-edit' object.id %}"><button class="btn btn-primary">Edit</button></a>
+  <a href="{% url 'article-delete' object.id %}"><button class="btn btn-danger">Delete</button></a>
 </ul>
 
 {% endblock %}
